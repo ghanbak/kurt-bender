@@ -4,8 +4,8 @@
   	  <img src="<?php echo $data->images()->first()->url() ?>" alt="<?php echo $data->images()->first()->name() ?>" title="<?php echo $data->images()->first()->name() ?>">
   	</div>
   	<div class="downloads">
-	  <a class="btn" href="<?php echo $data->file('headshot.jpg')->url() ?>">Download Headshot</a>
-	  <a class="btn" href="<?php echo $data->file('kurt-bender-resume.pdf')->url() ?>">Download Resume</a>
+	  <a class="btn" href="/downloads/headshot">Download Headshot</a>
+	  <a class="btn" href="/downloads/resume">Download Resume</a>
 	</div>
   </div>
   <div class="content">
