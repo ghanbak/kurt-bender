@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="27px" viewBox="0 0 35 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-34.000000, -34.000000)" fill="#DBE0E8">
+            <g id="header-2" sketch:type="MSLayerGroup" transform="translate(34.000000, 34.000000)">
+                <g id="nav" transform="translate(0.000000, 0.761459)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-1" x="0" y="0" width="35" height="5"></rect>
+                    <rect id="Rectangle-1" x="0" y="10.4954162" width="35" height="5"></rect>
+                    <rect id="Rectangle-1" x="0" y="20.9908324" width="35" height="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

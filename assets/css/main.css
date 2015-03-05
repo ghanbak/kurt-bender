@@ -1,0 +1,460 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+/* Source Sans Pro
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/sourcesanspro-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/sourcesanspro-600.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #006EC6;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #005EA9;
+}
+
+
+/* Buttons
+-------------------------------------------------- */
+button,
+.btn,
+.button {
+  padding: 8px 16px;
+  background: #34373C;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button:hover,
+.btn:hover,
+.button:hover {
+  background: #212326;
+  color: #eee;
+}
+
+
+/* Inputs, Forms and Fields
+-------------------------------------------------- */
+input, textarea, keygen, select {
+  padding: 5px;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+  height: 101%;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  background: #fff;
+  color: #34373C;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+.overlay-blur {
+  background: url('../images/bg-blur.png') no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1200;
+  background: rgba(219, 224, 232, 0.95);
+  padding: 17px;
+}
+.header-wrap {
+  max-width: 65em;
+  margin: 0 auto;
+}
+.logo {
+  text-align: right;
+  float: right;
+  color: #34373C;
+  font-size: 35px;
+  font-weight: 700;
+}
+.nav {
+  float: left;
+  height: 34px;
+}
+
+@media screen and (min-width: 40em) {
+  .header {
+    background: transparent;
+  }
+  .logo {
+    color: #DBE0E8;
+  }
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+nav {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  padding-top: 70px;
+  background: #34373C;
+  z-index: 1000;
+  top: 0;
+  left: -300px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#nav-svg #nav {
+  display: none;
+}
+#nav-svg #mobile-nav {
+  display: block;
+}
+nav.show {
+  left: 0;
+}
+.menu a {
+  display: block;
+  color: #fff;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+.menu .active {
+}
+.menu li {
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  padding: .35em .7em;
+  font-weight: 600;
+}
+.submenu a {
+  padding: .5em 1.5em;
+  font-size: .9em;
+  font-weight: 300;
+  color: #fff;
+  white-space: nowrap;
+}
+.submenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+  .logo {
+    float: right;
+  }
+  .nav {
+    float: left;
+  }
+  #nav-svg #nav {
+    display: block;
+  }
+  #nav-svg #mobile-nav {
+    display: none;
+  }
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+
+/* Top
+-------------------------------------------------- */
+#top {
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+
+#top img {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 40em) {
+  #top {
+    display: block;
+  }
+}
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+  margin: 0 auto;
+  padding: 1.5em;
+  padding-top: 4.5em;
+  max-width: 50em;
+}
+.main hr {
+  margin: 3em 0;
+  height: 2px;
+  background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 40em) {
+  .main {
+    padding: 3em;
+  }
+}
+
+
+/* About Section
+-------------------------------------------------- */
+#about-me > * {
+  vertical-align: top;
+}
+#about-me .profile {
+  display: block;
+  margin-bottom: 2em;
+}
+#about-me .profile .img-wrap {
+  width: 330px;
+  height: 330px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto 2em;
+}
+#about-me .profile img {
+  max-width: 100%;
+}
+#about-me .profile .downloads {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 50em) {
+  #about-me .content {
+    width: calc(100% - 370px);
+  }
+  #about-me .profile {
+    float: right;
+    margin: 0 auto;
+  }
+}
+
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+}
+.meta li b {
+  font-weight: 400;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+@media screen and (min-width: 50em) {
+  .teaser li {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  padding-left: .25em;
+}

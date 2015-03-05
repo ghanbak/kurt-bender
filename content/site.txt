@@ -1,0 +1,17 @@
+Title: Kurt Bender - Actor
+
+----
+
+Author: Kurt Bender
+
+----
+
+Description: 
+
+----
+
+Keywords: Kirby,CMS,file-based
+
+----
+
+Copyright: © (date: Year) Kurt Bender.
