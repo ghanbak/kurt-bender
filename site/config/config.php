@@ -28,3 +28,26 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+// Rewrite incoming request URI's
+c::set('rewrite', true);
+
+// Define some routes
+c::set('routes', array(
+  array(
+    'pattern' => 'downloads/headshot',
+    'action'  => function() {
+      page('about')
+        ->file('headshot.jpg')
+        ->download();
+    }
+  ),
+  array(
+    'pattern' => 'downloads/resume',
+    'action'  => function() {
+      page('about')
+        ->file('kurt-bender-resume.pdf')
+        ->download();
+    }
+  ),
+));
