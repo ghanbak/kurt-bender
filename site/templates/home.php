@@ -17,10 +17,6 @@
 
   ?>
 
-  <hr>
-
-  <?php //snippet('projects') ?>
+  <?php snippet('footer') ?>
 
 </main>
-
-<?php snippet('footer') ?>

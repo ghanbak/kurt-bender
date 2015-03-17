@@ -30,6 +30,6 @@
       <?php endif ?>
     </nav>
 
-  </main>
+    <?php snippet('footer') ?>
 
-<?php snippet('footer') ?>
+  </main>

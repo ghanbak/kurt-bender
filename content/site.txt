@@ -1,4 +1,4 @@
-Title: Kurt Bender - Actor
+Title: Kurt Bender
 
 ----
 
@@ -10,8 +10,12 @@ Description:
 
 ----
 
-Keywords: Kirby,CMS,file-based
+Keywords: actor,singer,musical theater
 
 ----
 
-Copyright: © (date: Year) Kurt Bender.
+Copyright: 
+
+© (date: Year) Kurt Bender. All rights reserved.
+Crafted by (link: ethan-macdonald.com text: Ethan).
+Made with (link: getkirby.com text:Kirby) and <span class="heart">♥</span>

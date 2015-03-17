@@ -9,10 +9,9 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <hr>
-
     <?php snippet('projects') ?>
+
+    <?php snippet('footer') ?>
 
   </main>
 
-<?php snippet('footer') ?>
