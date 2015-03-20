@@ -184,6 +184,9 @@ body {
   font-size: 35px;
   font-weight: 700;
 }
+.logo:hover {
+  color: #34373C;
+}
 .nav {
   float: left;
   height: 34px;
@@ -195,6 +198,9 @@ body {
   }
   .logo {
     color: #DBE0E8;
+  }
+  .logo:hover {
+    color: #fff;
   }
 }
 
@@ -476,6 +482,31 @@ h1 a, h2 a, h3 a, h4 a {
   #about-me .profile {
     float: right;
     margin: 0 auto;
+  }
+}
+
+
+/* Photos Section
+-------------------------------------------------- */
+#photos h2 {
+  text-align: center;
+}
+
+#photos .photo-list li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+
+@media screen and (min-width: 50em) {
+  #photos .photo-list {
+    float: left;
+    width: 47%;
+    margin-left: 5%;
+    list-style: none;
+  }
+
+  #photos .photo-list.odd {
+    margin-left: 0;
   }
 }
 

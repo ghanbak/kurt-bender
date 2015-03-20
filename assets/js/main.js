@@ -4,6 +4,11 @@ $( document ).ready(function() {
   	$(this).toggleClass('ex');
   });
 
+  $('.menu a').on('click', function() {
+    $('nav').removeClass('show');
+    $('.nav').removeClass('ex');
+  });
+
   var area = $('#top');
   var range = 300;
   $(window).on('scroll', function () {
@@ -14,6 +19,21 @@ $( document ).ready(function() {
       offset = offset + height / 2;
       $('.overlay').css({ 'opacity': 1 - (st - offset + range) / range });
       $('#top img').css({ 'opacity': 1 - (st - offset + range) / range });
+    });
+  });
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
     });
   });
 });

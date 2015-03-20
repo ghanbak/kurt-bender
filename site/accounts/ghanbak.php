@@ -10,8 +10,8 @@ token: ae5abc0bb7c1ff4b5167e5fc08eeb1c49f933228
 firstname: Ethan
 lastname: MacDonald
 history:
+  - photos/photo-d
+  - photos/photo-c
   - null
   - about
   - photos/photo-a
-  - projects
-  - home

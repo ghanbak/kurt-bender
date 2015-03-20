@@ -4,7 +4,7 @@
 <div class="overlay-blur"></div>
 
 <section id="top">
-  <img src="/assets/images/scroll.svg" alt="scroll down" title="scroll down" />
+  <a href="#about-me"><img src="/assets/images/scroll.svg" alt="scroll down" title="scroll down" /></a>
 </section>
 
 <main id="home" class="main" role="main">
