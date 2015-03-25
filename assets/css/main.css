@@ -88,6 +88,9 @@ button,
   color: #fff;
   font-size: 15px;
   font-weight: 600;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 button:hover,
@@ -141,6 +144,7 @@ body {
 .overlay {
   background: url('../images/bg.png') no-repeat;
   background-size: cover;
+  background-position: 50% 0;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -151,6 +155,7 @@ body {
 .overlay-blur {
   background: url('../images/bg-blur.png') no-repeat;
   background-size: cover;
+  background-position: 50% 0;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -320,6 +325,10 @@ nav.show {
 .menu > li > a {
   padding: .35em .7em;
   font-weight: 600;
+  border-bottom: 1px solid #2a2d31;
+}
+.menu > li:first-child > a {
+  border-top: 1px solid #2a2d31;
 }
 .submenu a {
   padding: .5em 1.5em;
@@ -420,8 +429,7 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .main {
   margin: 0 auto;
-  padding: 1.5em;
-  padding-top: 4.5em;
+  padding: 0 1.5em;
   max-width: 50em;
 }
 .main hr {
@@ -451,6 +459,9 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* About Section
 -------------------------------------------------- */
+#about-me {
+  padding-top: 4.5em;
+}
 #about-me > * {
   vertical-align: top;
 }
@@ -459,8 +470,8 @@ h1 a, h2 a, h3 a, h4 a {
   margin-bottom: 2em;
 }
 #about-me .profile .img-wrap {
-  width: 330px;
-  height: 330px;
+  width: 260px;
+  height: 260px;
   border-radius: 100%;
   overflow: hidden;
   display: block;
@@ -468,6 +479,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 #about-me .profile img {
   max-width: 100%;
+  width: 100%;
 }
 #about-me .profile .downloads {
   display: block;
@@ -483,11 +495,18 @@ h1 a, h2 a, h3 a, h4 a {
     float: right;
     margin: 0 auto;
   }
+  #about-me .profile .img-wrap {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 
 /* Photos Section
 -------------------------------------------------- */
+#photos {
+  padding-top: 4.5em;
+}
 #photos h2 {
   text-align: center;
 }

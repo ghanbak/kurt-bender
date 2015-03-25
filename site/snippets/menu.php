@@ -5,7 +5,7 @@
       <a href="#about-me">About Me</a>
     </li>
     <li>
-      <a href="#photos">Latest Photos</a>
+      <a href="#photos">Photos</a>
     </li>
     <li></li>
     <li></li>
