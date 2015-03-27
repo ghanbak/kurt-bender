@@ -17,4 +17,4 @@ Keywords: actor,singer,musical theater
 Copyright: 
 
 © (date: Year) Kurt Bender. All rights reserved.
-Made with (link: http://getkirby.com text:Kirby) and <span class="heart">♥</span> by (link: http://ethan-macdonald.com text: Ethan)
+Made with (link: http://getkirby.com text:Kirby) by (link: http://ethan-macdonald.com text: Ethan)
