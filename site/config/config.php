@@ -38,7 +38,7 @@ c::set('routes', array(
     'pattern' => 'downloads/headshot',
     'action'  => function() {
       page('about')
-        ->file('headshot.jpg')
+        ->file('kurt_bender_headshot.jpg')
         ->download();
     }
   ),

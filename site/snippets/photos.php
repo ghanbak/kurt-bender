@@ -6,9 +6,9 @@
     <?php if($n%2 == 1): ?>
     <li>
       <?php if($image = $photo->images()->sortBy('sort', 'asc')->first()): ?>
-      <!-- <a href="<?php //echo $photo->url() ?>"> -->
+      <a class="photo" href="<?php echo $image->url() ?>">
         <img src="<?php echo $image->url() ?>" alt="<?php echo $photo->title()->html() ?>" >
-      <!-- </a> -->
+      </a>
       <?php endif ?>
     </li>
     <?php endif ?>
@@ -19,9 +19,9 @@
     <?php if($n%2 == 0): ?>
     <li>
       <?php if($image = $photo->images()->sortBy('sort', 'asc')->first()): ?>
-      <!-- <a href="<?php //echo $photo->url() ?>"> -->
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $photo->title()->html() ?>" >
-      <!-- </a> -->
+      <a class="photo" href="<?php echo $image->url() ?>">
+        <img class="photo" src="<?php echo $image->url() ?>" alt="<?php echo $photo->title()->html() ?>" >
+      </a>
       <?php endif ?>
     </li>
     <?php endif ?>

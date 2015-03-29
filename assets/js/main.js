@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+  
+  $('.photo-list .photo').colorbox({maxWidth:"85%", maxHeight:"90%"});
+
   $('.nav').on('click', function() {
   	$('nav').toggleClass('show');
   	$(this).toggleClass('ex');

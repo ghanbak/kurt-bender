@@ -10,7 +10,9 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/colorbox/jquery.colorbox-min.js"></script>
   <?php echo css('assets/css/main.css') ?>
+  <?php echo css('assets/js/colorbox/example2/colorbox.css') ?>
   <script type="text/javascript" src="/assets/js/main.js"></script>
 
 </head>

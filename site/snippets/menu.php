@@ -5,10 +5,17 @@
       <a href="#about-me">About Me</a>
     </li>
     <li>
+      <a href="/content/1-about/kurt_bender_headshot.jpg">View Headshot</a>
+    </li>
+    <li>
+      <a href="/content/1-about/kurt-bender-resume.pdf">View Resume</a>
+    </li>
+    <li>
       <a href="#photos">Photos</a>
     </li>
-    <li></li>
-    <li></li>
+    <li>
+      <a href="#mc_embed_signup">Newsletter</a>
+    </li>
   </ul>
 
 </nav>
