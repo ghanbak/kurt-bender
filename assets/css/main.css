@@ -179,7 +179,6 @@ body {
   padding: 17px;
 }
 .header-wrap {
-  max-width: 65em;
   margin: 0 auto;
 }
 .logo {
@@ -635,7 +634,7 @@ h1 a, h2 a, h3 a, h4 a {
   }
 
   #mc-embedded-subscribe-form input[type="email"] {
-    min-width: 250px;
+    max-width: 250px;
   }
 }
 
