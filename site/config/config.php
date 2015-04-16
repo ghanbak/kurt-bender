@@ -51,3 +51,6 @@ c::set('routes', array(
     }
   ),
 ));
+
+// Cache the site
+c::set('cache', true);
