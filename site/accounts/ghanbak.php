@@ -6,12 +6,12 @@ password: >
   $2a$10$w4k6zlsCymVsRNWAx0aA9emO4Vist2T45gEs5ffLch7LrPdMqjQCu
 language: en
 role: admin
-token: acdd8304296b084416cdd7901a98e651b5e0b27f
+token: 0b4b22efca324b7fef387ad6e2bdc651ef703736
 firstname: Ethan
 lastname: MacDonald
 history:
+  - about
   - null
   - photos/photo-d
   - photos/photo-c
-  - about
   - photos/photo-a
