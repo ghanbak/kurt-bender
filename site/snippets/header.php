@@ -12,6 +12,7 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="/assets/js/colorbox/jquery.colorbox-min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <?php echo css('assets/css/main.css') ?>
   <?php echo css('assets/js/colorbox/example2/colorbox.css') ?>
   <script type="text/javascript" src="/assets/js/main.js"></script>
